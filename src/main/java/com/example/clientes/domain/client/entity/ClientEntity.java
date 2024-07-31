@@ -16,7 +16,6 @@ import lombok.Setter;
 @PrimaryKeyJoinColumn(referencedColumnName="person_id")
 public class ClientEntity extends PersonEntity {
 
-
     @Column(nullable = false)
     private String contrasena;
 
