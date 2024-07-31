@@ -9,3 +9,37 @@ INSERT INTO clientes (person_id, identificacion, nombre, genero, edad, direccion
 (66778899, 'Frank Yellow', 'Masculino', 27, '456 Spruce St', '555-6789', 'password234', TRUE),
 (77889900, 'Grace Red', 'Femenino', 31, '789 Fir St', '555-7890', 'password567', TRUE),
 (88990011, 'Hank Purple', 'Masculino', 29, '321 Willow St', '555-8901', 'password890', TRUE);
+
+INSERT INTO cuentas (person_id, tipo_cuenta, saldo, estado) VALUES
+(1, 'Ahorros', 1000.0, TRUE),
+(2, 'Corriente', 500.0, TRUE),
+(3, 'Ahorros', 1500.0, TRUE),
+(4, 'Corriente', 2000.0, TRUE),
+(5, 'Ahorros', 2500.0, TRUE),
+(6, 'Corriente', 3000.0, TRUE),
+(7, 'Ahorros', 3500.0, TRUE),
+(8, 'Corriente', 4000.0, TRUE),
+(9, 'Ahorros', 4500.0, TRUE),
+(10, 'Corriente', 5000.0, TRUE);
+
+INSERT INTO movimientos (numero_cuenta, fecha, tipo_movimiento, valor) VALUES
+(1, '2024-07-01', 'Deposito', 100.0),
+(1, '2024-07-02', 'Retiro', 50.0),
+(2, '2024-07-01', 'Deposito', 200.0),
+(2, '2024-07-02', 'Retiro', 100.0),
+(3, '2024-07-03', 'Deposito', 300.0),
+(3, '2024-07-04', 'Retiro', 150.0),
+(4, '2024-07-03', 'Deposito', 400.0),
+(4, '2024-07-04', 'Retiro', 200.0),
+(5, '2024-07-05', 'Deposito', 500.0),
+(5, '2024-07-06', 'Retiro', 250.0),
+(6, '2024-07-05', 'Deposito', 600.0),
+(6, '2024-07-06', 'Retiro', 300.0),
+(7, '2024-07-07', 'Deposito', 700.0),
+(7, '2024-07-08', 'Retiro', 350.0),
+(8, '2024-07-07', 'Deposito', 800.0),
+(8, '2024-07-08', 'Retiro', 400.0),
+(9, '2024-07-09', 'Deposito', 900.0),
+(9, '2024-07-10', 'Retiro', 450.0),
+(10, '2024-07-09', 'Deposito', 1000.0),
+(10, '2024-07-10', 'Retiro', 500.0);
